@@ -41,17 +41,9 @@ def warning():
     print(text)
     print('**************************************')
     notice = """
-**************************************
 All characters, events, and locations depicted in this game are products of the creators' imagination.
 Any resemblance to actual persons, living or dead, or actual events is purely coincidental.
 
-This game has been developed for the purpose of entertainment and should not be construed as a factual 
-representation of reality. The opinions and views expressed by the characters in the game are fictional 
-and do not necessarily reflect the opinions of the developers or any other associated entity.
-
-Please remember that the situations and actions portrayed in the game are fictional and should not be 
-replicated or performed in real life. Playing is a safe and controlled act; ensure you distinguish 
-between the game world and the real world.
 **************************************
 """
     print(notice)
