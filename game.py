@@ -19,5 +19,6 @@ def save_status(stage, status):
 def read_save_file():
     print(save['level']['i'])
 
-
-read_save_file()
+if __name__ == '__main__':
+    save_game(17)
+    read_save_file()
