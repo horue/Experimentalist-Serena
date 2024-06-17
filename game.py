@@ -9,4 +9,5 @@ def level_1():
     typewriter('Do you understand?')
     answer('status1')
 
-level_1()
+if __name__ == '__main__':
+    level_1()
