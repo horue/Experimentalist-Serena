@@ -1,34 +1,12 @@
-import sys
-import os
-import configparser
+from save import *
+from type import *
 
-save = configparser.ConfigParser()
-save.read('save.ini')
+def level_1():
+    save_game(1)
+    typewriter('Hello, I am Serena. Nice to meet you.')
+    typewriter('We are here today to star a new analysis system, and you will be helping us.')
+    typewriter("I'll be asking you things and you must answer me with Yes or No.")
+    typewriter('Do you understand?')
+    answer('status1')
 
-
-def save_game(r):
-    save['level'] = {'i':f'{r}'}
-    with open('save.ini', 'w') as configfile:
-        save.write(configfile)
-
-def save_status(stage, status):
-    save[f'{stage}'] = {'satatus' : f'{status}'}
-    with open('save.ini', 'w') as configfile:
-        save.write(configfile)
-
-def read_save_file():
-    global level
-    level = (save['level']['i'])
-
-def test():
-    if level == '3':
-        print('Level 3')
-    elif level == '17':
-        print('Level 17')
-    else:
-        print('False')
-
-if __name__ == '__main__':
-    save_game(3)
-    read_save_file()
-    test()
+level_1()
