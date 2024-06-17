@@ -20,11 +20,9 @@ def read_save_file():
     global level
     level = (save['level']['i'])
 
-def continue_game():
-    if level == '3':
-        print('Level 3')
-    elif level == '17':
-        print('Level 17')
+def continue_game(l, f):
+    if level == l:
+        f
     else:
         print('False')
 
