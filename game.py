@@ -17,8 +17,18 @@ def save_status(stage, status):
         save.write(configfile)
 
 def read_save_file():
-    print(save['level']['i'])
+    global level
+    level = (save['level']['i'])
+
+def test():
+    if level == '3':
+        print('Level 3')
+    elif level == '17':
+        print('Level 17')
+    else:
+        print('False')
 
 if __name__ == '__main__':
-    save_game(17)
+    save_game(3)
     read_save_file()
+    test()
