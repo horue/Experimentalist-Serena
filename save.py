@@ -18,13 +18,10 @@ def save_status(stage, status):
         save.write(configfile)
 
 ## Read save file ##
-def read_save_file():
+def read_save_file(label,status):
     global level
-    level = (save['level']['i'])
+    level = (save[f'{label}'][f'{status}'])
 
-def read_name():
-    global name
-    name = (save['name']['status'])
 
 def continue_game(l, f):
     if level == l:
@@ -37,6 +34,6 @@ def test():
 
 if __name__ == '__main__':
     save_game(10)
-    read_save_file()
+    read_save_file(label='level',status='i')
     print(level)
     continue_game('10',test)
