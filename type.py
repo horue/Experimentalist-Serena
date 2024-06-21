@@ -21,12 +21,12 @@ def answer(st):
         answer(st)
 
 def next_level(level):
-    print('May we continue?')
-    answer_input = input('>')
+    typewriter('May we continue?')
+    answer_input = input('> ')
     if answer_input.lower() == 'yes':
         level()
     elif answer_input.lower() == 'no':
-        print('Exit the game?')
+        typewriter('Exit the game?')
         answer_input = input('> ')
         if answer_input == 'yes':
             sys.exit()
