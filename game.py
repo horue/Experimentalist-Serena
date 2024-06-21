@@ -10,6 +10,8 @@ def level_1():
     typewriter("I'll be asking you things and you must answer me with Yes or No.")
     typewriter('Do you understand?')
     answer('status1')
+    typewriter('Do you understand why we are doing this?')
+    answer('status2')
 
 if __name__ == '__main__':
     level_1()
