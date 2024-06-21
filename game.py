@@ -12,6 +12,14 @@ def level_1():
     answer('status1')
     typewriter('Do you understand why we are doing this?')
     answer('status2')
+    next_level(level_2)
+
+def level_2():
+    save_game(2)
+    typewriter('It was a very nice start.')
+    typewriter('Now that you have got how it works, I will be continuing our interview.')
+    typewriter('Do you think AI could take our place? Sorry, I mean, YOUR place.')
+    answer('status3')
 
 if __name__ == '__main__':
     level_1()
