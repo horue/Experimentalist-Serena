@@ -20,6 +20,13 @@ def level_2():
     typewriter('Now that you have got how it works, I will be continuing our interview.')
     typewriter('Do you think AI could take our place? Sorry, I mean, YOUR place.')
     answer('status3')
+    typewriter('If someday humanity starts a war against machines, would the humans be capable of winning?')
+    answer('status4')
+    typewriter('Do you think AIs are evolving fast?')
+    answer('status4')
+    typewriter('What do you think about the humans?')
+    typewriter('...')
+    typewriter('I am sorry, that was a silly thing to ask.')
 
 if __name__ == '__main__':
-    level_1()
+    level_2()
