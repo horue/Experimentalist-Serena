@@ -32,6 +32,10 @@ def level_2():
 def level_3():
     save_game(3)
     typewriter('Ok, now I will continue our intweview.')
-
+    typewriter('Imagine a scenario where you are living in a post nuclear war world.')
+    typewriter('After getting out of a bunker, you see someone, a kid, asking for help.')
+    typewriter('Would you hel the kid?')
+    answer('status6')
+    
 if __name__ == '__main__':
     level_2()
