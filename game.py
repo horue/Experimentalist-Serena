@@ -34,8 +34,10 @@ def level_3():
     typewriter('Ok, now I will continue our intweview.')
     typewriter('Imagine a scenario where you are living in a post nuclear war world.')
     typewriter('After getting out of a bunker, you see someone, a kid, asking for help.')
-    typewriter('Would you hel the kid?')
+    typewriter('Would you help the kid?')
     answer('status6')
-    
+    typewriter("If it was a grown up man, around his 40s, would you help him?")
+    answer('status7')
+
 if __name__ == '__main__':
-    level_2()
+    level_1()
