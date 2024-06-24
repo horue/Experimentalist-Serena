@@ -27,6 +27,11 @@ def level_2():
     typewriter('What do you think about the humans?')
     typewriter('...')
     typewriter('I am sorry, that was a silly thing to ask.')
+    next_level(level_3)
+
+def level_3():
+    save_game(3)
+    typewriter('Ok, now I will continue our intweview.')
 
 if __name__ == '__main__':
     level_2()
