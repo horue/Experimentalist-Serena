@@ -23,7 +23,7 @@ def level_2():
     typewriter('If someday humanity starts a war against machines, would the humans be capable of winning?')
     answer('status4')
     typewriter('Do you think AIs are evolving fast?')
-    answer('status4')
+    answer('status5')
     typewriter('What do you think about the humans?')
     typewriter('...')
     typewriter('I am sorry, that was a silly thing to ask.')
