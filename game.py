@@ -38,6 +38,8 @@ def level_3():
     answer('status6')
     typewriter("If it was a grown up man, around his 40s, would you help him?")
     answer('status7')
+    typewriter('If it was a women, would you help her?')
+    answer('status8')
 
 if __name__ == '__main__':
     level_1()
