@@ -1,6 +1,6 @@
 import tensorflow as tf
 import pandas as pd
-import numpy
+import numpy as np
 
 csvPath = r"src\data\dataset.csv"
 sentences = ["eu gosto de sorvete.", "você também gosta de sorvete?"]
@@ -23,9 +23,16 @@ text_vectorization_layer.adapt(datasetFrases)
 output = text_vectorization_layer(datasetFrases)
 
 resultDict = output.numpy()
+convertedDict = []
 
 for internalDict in resultDict:
-    print(internalDict.cumsum())
+    valueSum = internalDict.cumsum()[-1]
+    convertedDict.append(valueSum)
+
+
+frasesS = np.array(convertedDict, dtype=float)
+print(frasesS)
+
 
 
 #print("Vectorized Output:", output.numpy())
