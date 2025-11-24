@@ -25,12 +25,10 @@ class Preparer:
         convertedDict = []
 
         
-        valueSum = resultDict.cumsum()[-1]
-        convertedDict.append(valueSum)
+        convertedDict.append(resultDict)
 
 
         userInputS = np.array(convertedDict, dtype=float)
-        print(userInputS)
         return userInputS
 
     def tokenizeDataset():
@@ -51,13 +49,14 @@ class Preparer:
         convertedDict = []
 
         for internalDict in resultDict:
-            valueSum = internalDict.cumsum()[-1]
-            convertedDict.append(valueSum)
+            convertedDict.append(internalDict)
 
 
         frasesS = np.array(convertedDict, dtype=float)
-        print(frasesS)
+        return frasesS
 
 
-Preparer.tokenizeInput("estou feliz")
-Preparer.tokenizeDataset()
+if __name__ == "__main__":
+    Preparer.tokenizeInput("estou triste")
+    print(Preparer.tokenizeDataset())
+    Preparer.tokenizeDataset()
