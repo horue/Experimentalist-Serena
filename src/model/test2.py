@@ -3,7 +3,10 @@ import pandas as pd
 import numpy as np
 
 class Preparer:
-    def tokenize():
+    def tokenizeInput():
+        pass
+
+    def tokenizeDataset():
         csvPath = r"src\data\dataset.csv"
         dataset = pd.read_csv(csvPath)
         datasetFrases = dataset["frase"]
