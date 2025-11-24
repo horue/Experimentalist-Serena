@@ -1,4 +1,4 @@
-from test2 import Preparer, Dataset
+from preparer import Preparer, Dataset
 import tensorflow as tf
 import numpy as np
 
